@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevInBank</title>
+        <script src="./_js/index.js" async></script>
+        <link rel="stylesheet" href="./_css/index.css"/>
+    </head>
+
+    <body>
+        
+        <header>            
+            <h1>Gringotes</h1>
+            <nav>
+                <a href="index.html"><img id="logo" src="./_imagens/index.png" alt="Tux" /></a>                
+            </nav>
+
+        </header>
+
+        <main>
+
+            <fieldset>
+
+            <form id="form-cadastro">
+                <div>
+                    <p> <label for="nome">Nome:</label> </p>
+                    <p> <input required id="nome" type="text" size="55" maxlength="50" placeholder="Digite o nome"/> </p>
+                </div>
+                <div>
+                    <p> <label for="cpf">CPF:</label> </p>
+                    <p> <input required id="cpf" type="text" size="55" maxlength="14" placeholder="Digite o CPF"/> </p>
+                    <!-- <p> <input required id="cpf" type="text" size="55" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" placeholder="Digite o CPF"/> </p> -->
+                </div>
+                <div>
+                    <p> <label for="celular">Celular:</label> </p>
+                    <p> <input required id="celular" type="text" size="55" maxlength="11" placeholder="Digite o telefone"/> </p>
+                </div>
+                <div>
+                    <p> <label for="senha">Senha:</label> </p>
+                    <p> <input required id="senha" type="password" size="55" maxlength="8" placeholder="Digite a Senha"/> </p>
+                </div>
+                <div>
+                    <p> <label for="confirmacao-celular">Confirmação Senha:</label> </p>
+                    <p> <input required id="confirmacaoSenha" type="password" size="55" maxlength="8" placeholder="Digite a confirmação da Senha"/> </p>
+                </div>
+
+                <div>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            
+            </fieldset>
+        
+            <fieldset>
+
+                <form id="form-operacao">
+
+                    <div>
+                        <p> <label for="conta">Conta:</label> </p>
+                        <p> <input required id="conta" type="text" size="55" placeholder="Digite a conta" /> </p>
+                    </div>
+
+                    <div>
+                        <p> <label for="operacao">Operação:</label> </p>
+                        <p> <select required id="operacao">
+                            <option value="saque">Saque</option>
+                            <option value="deposito">Depósito</option>
+                            <option value="saldo">Saldo</option>
+                        </select> </p>
+                    </div>
+
+                    <div>
+                        <p> <label for="valor">valor:</label> </p>
+                        <p> <input required id="valor" type="text" size="55" placeholder="Digite o valor" /> </p>
+                    </div>
+
+                    <div>
+                        <p> <label for="senhaOperacao">Senha:</label> </p>
+                        <p> <input required id="senhaOperacao" type="password" size="55" maxlength="8"  placeholder="Digite a senha" /> </p>
+                    </div>
+
+                    <div>
+                        <button type="reset">Limpar</button>
+                        <button type="submit">Confirmar</button>
+                    </div>
+
+                </form>
+
+            </fieldset>
+
+        </main>
+
+        <footer>
+            <p>Criado por Carlos Eduardo</p>
+        </footer>
+
+    </body>
+
+</html>

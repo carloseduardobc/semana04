@@ -1,0 +1,148 @@
+html, body, div, main, footer{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    padding-top: 40px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    padding: 0 20px 40px; /* Largura e altura da página */
+    flex-grow: 1;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;    
+    /* background-image: url(fundo-circuit-texture.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover; /* Preenche o espaço inteiro */
+    background-position: center center;
+}
+
+p{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a#botao button{
+    border-radius: 10px; /* Borda curvada no botão "Avançar" */
+    padding: 10px;
+    border: 2px solid gray;
+    margin-top: 20px;
+    cursor: pointer; /* Muda o tipo de cursor do mouse */
+}
+
+a#botao img{ /* Imagem do Botão Avançar */
+    height: 30px;
+}
+
+div#imagens{ /* Configuração da seção NAV do arquivo "Imagens" */
+    display: flex;
+    width: 100%;
+}
+
+div#imagens img{ /* Configuração das imagens do arquivo "Imagens" */
+    display: block;
+    width: calc(100% / 3);
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+nav{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed; /* Deixa o menu fixado na posição de margens formatada acima */
+    height: 40px; /* Altura do menu */
+    padding: 0 10px; /* Alinhamento dos ítens do menu */
+    background-color: goldenrod;
+    display: flex;
+    align-items: center; /* Alinhamento vertical */
+    justify-content: space-between; /* Distribução dos ítens no menu */
+}
+
+
+form{
+	width: 700px; /* Largura do formulário */
+	margin: auto; /* Alinhamento horizontal do formulário */
+}
+
+/* Ítens formulários */
+input{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Cor de fundo Input */
+input:hover, textarea:hover{ 
+	background-color: #dddddd;
+}
+
+nav img#logo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+}
+
+nav ul li a:hover{ /* Configuração de transição de cor dos ítens do menu */
+    background-color: white;
+    color: gray;
+}
+
+footer{
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+/* Código Professora*/
+
+input,
+textarea,
+select {  
+  border-radius: 10px;  
+  padding: 10px;
+}
+
+fieldset{
+	border-color: #cecece;
+	margin: 10px;
+    border-radius: 10px;  
+    padding: 10px;
+}
+
+button {    
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.7;
+  }
+
+  .form-actions {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
